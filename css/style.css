@@ -45,8 +45,11 @@ hr.line{
 }
 a { 
     text-decoration: none;
+    color: #fff;
 }
-
+a:hover {
+    color:#fff;
+}
 .card {
     background-color: #333333;
 }
@@ -62,7 +65,6 @@ a {
 .portfolio-project-btn {
     color: #ffffff;
     border: 2px solid #03DAC5;
-    background-color: #323232;
     padding: 13px 26px;
     font-family: 'Poppins';
     font-size: 17px;
@@ -85,4 +87,28 @@ a {
     transition: 0.5s;
     border: 2px solid #BB86FC;
     opacity: 0.7;
+}
+
+.project-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    margin-top: 1rem;
+}
+
+hr {
+    color: #fff;
+}
+
+.nav-portfolio {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    
 }
