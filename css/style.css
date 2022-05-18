@@ -107,8 +107,19 @@ hr {
 
 .nav-portfolio {
     margin: 0 auto;
+    overflow: hidden;
     max-width: 1200px;
     margin-top: 1.5rem;
     margin-bottom: 5rem;
-    
+}
+
+.nav-portfolio a {
+    float: left;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+  
+.items-right {
+    float: right;
 }
