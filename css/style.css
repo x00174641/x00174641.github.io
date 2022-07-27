@@ -3,12 +3,16 @@ body {
     background-color: #1D1D1D;
 }
 .center-con {
-    left: 0;
-    margin-top: -200px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 2px solid #9c9a98;
+    border-radius: 10px;
+}
+
+.proj {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 150px;
 }
 h1,h2,h3,h4,h5,h6 {
     color: #ffffff;
@@ -19,30 +23,9 @@ p {
     font-family: 'Poppins';
 }
 .my-name {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 8rem;
+    color: #2bd661;
 }
 
-hr.line{
-    width: 20%;
-    opacity: 1;
-    margin-left:40%;
-    background: #fff;
-}
-
-.portfolio-btn {
-    color: #ffffff;
-    border: 2px solid #03DAC5;
-    background-color: #1D1D1D;
-    padding: 13px 26px;
-    font-family: 'Poppins';
-    font-size: 17px;
-}
-.portfolio-btn:hover {
-    transition: 0.5s;
-    border: 2px solid #BB86FC;
-    opacity: 0.7;
-}
 a { 
     text-decoration: none;
     color: #fff;
@@ -50,59 +33,19 @@ a {
 a:hover {
     color:#fff;
 }
+
 .card {
     background-color: #333333;
+    height: 440px;
 }
 .card-text,.card-title {
     color: #fff;
 }
+
 .card:hover {
     transform: translateY(-3px);
     transition: 0.4s;
     /* border: 1px solid white; */
-}
-
-.portfolio-project-btn {
-    color: #ffffff;
-    border: 2px solid #03DAC5;
-    padding: 13px 26px;
-    font-family: 'Poppins';
-    font-size: 17px;
-}
-.portfolio-project-btn:hover {
-    transition: 0.5s;
-    border: 2px solid #BB86FC;
-    opacity: 0.7;
-    color: #fff;
-}
-.casual-btn {
-    color: #ffffff;
-    border: 2px solid #03DAC5;
-    background-color: #1D1D1D;
-    padding: 13px 26px;
-    font-family: 'Poppins';
-    font-size: 17px;
-}
-.casual-btn:hover {
-    transition: 0.5s;
-    border: 2px solid #BB86FC;
-    opacity: 0.7;
-}
-
-.project-container {
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.project-title {
-    margin-top: 1rem;
-}
-
-hr {
-    color: #fff;
 }
 
 .nav-portfolio {
@@ -122,4 +65,54 @@ hr {
   
 .items-right {
     float: right;
+}
+
+.text-card {
+    font-size: 14px;
+}
+
+.language-used {
+    background-color: #333333;
+    border: 2px solid #9c9a98;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+.live-site-link {
+    color: #2bd661;
+}
+
+.github-link {
+    color: #BB86FC;
+}
+
+.linkedin {
+    font-size: 50px !important;
+    color: #2bd661;
+    transition: 0.5s;
+}
+
+.linkedin:hover {
+    color: #fff;
+}
+
+.github {
+    font-size: 50px !important;
+    color: #2bd661;
+    transition: 0.5s;
+}
+
+.github:hover {
+    color: #fff;
+}
+
+.mail {
+    font-size: 50px !important;
+    color: #2bd661;
+    transition: 0.5s;
+
+}
+
+.mail:hover {
+    color: #00a2ed;
 }
