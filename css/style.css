@@ -37,6 +37,7 @@ a:hover {
 .card {
     background-color: #333333;
     height: 440px;
+    border-radius: 10px;
 }
 .card-text,.card-title {
     color: #fff;
