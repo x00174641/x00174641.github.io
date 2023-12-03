@@ -86,7 +86,7 @@ a:hover {
 }
 .timeline {
     position: relative;
-    max-width:1800px;
+    max-width: 1800px;
     margin: 100px auto;
 }
 .work-container {
@@ -161,6 +161,10 @@ a:hover {
         width: 100%;
         max-width: 350px;
     }
+
+    .about-me-container img {
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -182,12 +186,14 @@ a:hover {
     }
     .timeline {
         margin: 0px auto;
+        max-width: 100% !important;
     }
     .timeline::after {
         left: 30px;
     }
     .text-box {
         font-size: 12px;
+        padding: 0px 0px;
     }
     .right-container {
         left: 0;
