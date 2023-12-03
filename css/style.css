@@ -12,7 +12,8 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     scroll-snap-align: start;
@@ -143,6 +144,63 @@ a:hover {
 .work-experience-company-title {
     font-size: 36px;
 }
+/* Portfolio */
+.portfolio-background {
+    background-color: #eee7dd;
+}
+
+.portfolio-container {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.card {
+    border-radius: 10px !important;
+    border: 10px solid #fff !important;
+}
+
+.card:hover {
+    transform: translateY(-30px); 
+    opacity: 1 !important;
+    transition: 1s;
+}
+
+.card:not(.active-card) {
+    opacity: 0.5;
+}
+
+.active-card {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.portfolio-badge-purple {
+    background-color: #916ca3;
+    color: #fff;
+}
+
+.circularButton {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-colour {
+    background-color: #fba056;
+}
+
+.badge {
+    border-radius: 10px;
+}
 
 /* Mobile Friendly */
 @media (max-width: 768px) {
@@ -164,6 +222,15 @@ a:hover {
 
     .about-me-container img {
         width: 50%;
+    }
+    .active-card {
+        transform: scale(1);
+    }
+    .card:not(.active-card) {
+        opacity: 1;
+    }
+    .circularButton {
+        display: none;
     }
 }
 
