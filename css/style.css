@@ -166,7 +166,9 @@ a:hover {
 @media (max-width: 768px) {
     .work-container {
         width: 100%;
+        padding: 10px 40px;
     }
+    
     .left-container .work-experience-duration, .right-container .work-experience-duration {
         position: relative;
         left: 0 !important;
