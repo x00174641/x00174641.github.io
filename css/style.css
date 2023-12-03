@@ -65,14 +65,91 @@ a:hover {
     border-radius: 50px;
 }
 
+/* NavBar */
+.nav-link-text {
+    color:#000;
+}
+
+.resume-button-curve {
+    background-color: #fca159;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Work Experience Section */
+.work-experience-background {
+    background-color: #091747;
+}
+.work-experience-main-container {
+    margin: 0 auto;
+    color: #4bbafc;
+}
+.timeline {
+    position: relative;
+    max-width:1800px;
+    margin: 100px auto;
+}
+.work-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+.work-container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+.timeline::after{
+   content: '';
+   position: absolute;
+   width: 6px;
+   height: 100%; 
+   background: #fff;
+   top: 0;
+   left: 50%;
+   margin-left: -3px;
+   z-index: 1;
+}
+.text-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    font-size: 15px;
+    background: #091747 !important;
+}
+.left-container {
+    left: 0;
+}
+.work-experience-duration {
+    color: #fba056;
+}
+.left-container .work-experience-duration {
+    position: relative;
+    left: 80% !important;
+}
+.right-container {
+    left: 50%;
+}
+.work-experience-heading {
+    font-size: 60px;
+}
+.work-experience-company-title {
+    font-size: 36px;
+}
+
 /* Mobile Friendly */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     html {
         scroll-snap-type: none;
     }
-}
 
-@media (max-width: 480px) {
     .headline-text, .about-me-heading {
         font-size: 50px;
         text-align: center; 
@@ -86,15 +163,33 @@ a:hover {
     }
 }
 
-/* NavBar */
-.nav-link-text {
-    color:#000;
-}
+@media (max-width: 768px) {
+    .work-container {
+        width: 100%;
+    }
+    .left-container .work-experience-duration, .right-container .work-experience-duration {
+        position: relative;
+        left: 0 !important;
+    }
 
-.resume-button-curve {
-    background-color: #fca159;
-    border-radius: 10px;
-    color: #fff;
+    .left-container img, .right-container img {
+        left: 10px;
+    }
+    .work-experience-heading, .work-experience-company-title {
+        font-size: 22px;
+    }
+    .timeline {
+        margin: 0px auto;
+    }
+    .timeline::after {
+        left: 30px;
+    }
+    .text-box {
+        font-size: 12px;
+    }
+    .right-container {
+        left: 0;
+    }
 }
 
 @media (min-width: 992px) { 
