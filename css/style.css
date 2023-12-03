@@ -46,3 +46,23 @@ section {
     width: 350px;
     border-radius: 50px;
 }
+
+/* Mobile Friendly */
+@media (max-width: 480px) {
+    html {
+        scroll-snap-type: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline-text, .about-me-heading {
+        font-size: 50px;
+        text-align: center; 
+    }
+    .card-picture {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 350px;
+    }
+}
