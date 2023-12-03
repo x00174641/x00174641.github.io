@@ -30,3 +30,19 @@ section {
 .headline-text {
     font-size: 80px;
 }
+
+/* About me Section */
+.about-me-background {
+    background-color: #eee7dd;
+}
+.about-me-container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+.about-me-heading {
+    font-size: 60px;
+}
+.card-picture {
+    width: 350px;
+    border-radius: 50px;
+}
