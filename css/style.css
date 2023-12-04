@@ -145,9 +145,7 @@ a:hover {
 .right-container {
     left: 50%;
 }
-.work-experience-heading {
-    font-size: 60px;
-}
+
 .work-experience-company-title {
     font-size: 36px;
 }
@@ -284,7 +282,7 @@ a:hover {
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
 
     .card-group {
         display: block;
