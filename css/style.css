@@ -79,11 +79,11 @@ a:hover {
 
 /* Work Experience Section */
 .work-experience-background {
-    background-color: #091747;
+    background-color: #f5f0e9;
 }
 .work-experience-main-container {
     margin: 0 auto;
-    color: #4bbafc;
+    color: #000;
 }
 .timeline {
     position: relative;
@@ -112,24 +112,31 @@ a:hover {
    position: absolute;
    width: 6px;
    height: 100%; 
-   background: #fff;
+   background: #000;
    top: 0;
    left: 50%;
    margin-left: -3px;
    z-index: 1;
+   animation: timelinemove 2s linear forwards;
+}
+@keyframes timelinemove {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
 }
 .text-box {
     padding: 20px 30px;
-    background-color: #fff;
     position: relative;
     font-size: 15px;
-    background: #091747 !important;
 }
 .left-container {
     left: 0;
 }
 .work-experience-duration {
-    color: #fba056;
+    color: #000;
 }
 .left-container .work-experience-duration {
     position: relative;
@@ -157,12 +164,11 @@ a:hover {
 .card {
     border-radius: 10px !important;
     border: 10px solid #fff !important;
+    transition: transform 1s ease-in-out; 
 }
 
 .card:hover {
     transform: translateY(-30px); 
-    opacity: 1 !important;
-    transition: 1s;
 }
 
 .card:not(.active-card) {
@@ -203,7 +209,7 @@ a:hover {
 }
 
 /* Mobile Friendly */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     html {
         scroll-snap-type: none;
     }
@@ -234,7 +240,7 @@ a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .work-container {
         width: 100%;
         padding: 10px 40px;
@@ -267,7 +273,7 @@ a:hover {
     }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 1048px) { 
     .navbar,.container {
       display: flex;
       justify-content: space-between;
@@ -275,5 +281,22 @@ a:hover {
 
     .navbar-collapse {
       flex-grow: 0;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .card-group {
+        display: block;
+    }
+
+    .active-card {
+        transform: scale(1);
+    }
+    .card:not(.active-card) {
+        opacity: 1;
+    }
+    .circularButton {
+        display: none;
     }
 }
