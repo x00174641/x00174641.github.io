@@ -84,6 +84,7 @@ a:hover {
 .work-experience-main-container {
     margin: 0 auto;
     color: #000;
+    margin-top: 5%;
 }
 .timeline {
     position: relative;
@@ -156,7 +157,9 @@ a:hover {
 
 .portfolio-container {
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 90%;
+    margin-top: 5%;
+
 }
 
 .card {
@@ -282,7 +285,7 @@ a:hover {
     }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1400px) {
 
     .card-group {
         display: block;
@@ -297,4 +300,11 @@ a:hover {
     .circularButton {
         display: none;
     }
+}
+.nav-link {
+    color: #000 !important;
+}
+.nav-link.active {
+    background: rgba(255, 255, 255, 0) !important;
+    color: #6c757d!important;
 }

@@ -1,3 +1,5 @@
+let scrollSpy = new bootstrap.ScrollSpy(document.body, { target: '#navbarNavAltMarkup' })
+
 const cards = document.querySelectorAll('.card');
 let activeIndex = Math.floor(cards.length / 2);
 cards[activeIndex].classList.add('active-card');

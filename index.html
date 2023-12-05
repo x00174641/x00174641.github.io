@@ -12,23 +12,27 @@
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/script.js"></script>
     </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-main">
 
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg sticky-top" id="#navbar-main">
       <div class="container">
         <a class="navbar-brand" href="#">Jason Fung</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link nav-link-text" href="#aboutme">About me</a>
-            <a class="nav-item nav-link nav-link-text" href="#work_experience">Work Experience</a>
-            <a class="nav-item nav-link nav-link-text" href="#project">Projects</a>
-            <a class="nav-item nav-link nav-link-text" href="#contact">Contact</a>
+            <ul class="nav nav-pills">  
+            <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About me</a>
+            </li>
+            <a class="nav-item nav-link" href="#work_experience">Work Experience</a>
+            <a class="nav-item nav-link" href="#project">Projects</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
           </div>
         </div>
         <button class="btn resume-button-curve my-2 my-sm-0">Download Resume</button>
       </div>
     </nav>
 
+    <div data-spy="scroll" data-target="#navbar-main" data-offset="0">
     <section class="headline-section-background first-section">
       <div class="headline-container">
               <h1 class="headline-text">Hi, I'm Jason.</h1>
@@ -62,8 +66,8 @@
 
   <section class="work-experience-background" id="work_experience">
     <div class="work-experience-main-container">
-    <h4>Experience</h4>
-    <h1>Where I've worked</h1>
+    <h4 class="text-center">Experience</h4>
+    <h1 class="text-center">Where I've worked</h1>
     <hr>
     <div class="timeline">
     <div class="work-container left-container">
@@ -106,8 +110,8 @@
 
   <section class="portfolio-background" id="project">
     <div class="portfolio-container">
-      <h4 class="ml-5">Portfolio</h4>
-      <h1 class="ml-5">Some projects<br>I've worked on</h1>
+      <h4 class="text-center">Portfolio</h4>
+      <h1 class="text-center">Some projects<br>I've worked on</h1>
       <hr>
       <div class="card-group">
         <div class="card m-4">
@@ -132,7 +136,7 @@
             <span class="badge bg-warning">JavaScript</span>
             <span class="badge bg-light text-dark">HTML</span>
             <span class="badge bg-light text-dark">CSS</span>
-            <p class="card-text">An To-Do List application providing great time assistance for users.</p>
+            <p class="card-text">A To-Do List application providing great time assistance for users.</p>
           </div>
           <button class="btn button-colour text-center text-white font-weight-bold" disabled>Live view not available</button>
         </div>
@@ -187,7 +191,7 @@
       </div>
       </div>
   </section>
-
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
