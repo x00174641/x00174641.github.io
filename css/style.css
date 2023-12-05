@@ -63,7 +63,7 @@ a:hover {
 
 .card-picture {
     width: 350px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 /* NavBar */
@@ -214,10 +214,6 @@ a:hover {
     background-color: #fba056;
 }
 
-.badge {
-    border-radius: 10px;
-}
-
 /* Mobile Friendly */
 @media (max-width: 1200px) {
     html {
@@ -309,4 +305,24 @@ a:hover {
     .circularButton {
         display: none;
     }
+}
+
+/* Badges */
+.badge-python {
+    background-color: #306998;
+    color: white;
+}
+.badge {
+    border-radius: 10px;
+}
+
+/* Icons */
+.fa {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    font-size: 32px;
+}
+.fa:hover {
+    transform: scale(1.2);
+    color: #fca159;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
