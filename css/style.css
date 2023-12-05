@@ -67,8 +67,17 @@ a:hover {
 }
 
 /* NavBar */
-.nav-link-text {
-    color:#000;
+.navbar {
+    background-color: #f5f0e9;
+}
+
+.nav-link {
+    color: #000 !important;
+}
+
+.nav-link.active {
+    background: rgba(255, 255, 255, 0) !important;
+    color: #6c757d!important;
 }
 
 .resume-button-curve {
@@ -84,7 +93,7 @@ a:hover {
 .work-experience-main-container {
     margin: 0 auto;
     color: #000;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 .timeline {
     position: relative;
@@ -300,11 +309,4 @@ a:hover {
     .circularButton {
         display: none;
     }
-}
-.nav-link {
-    color: #000 !important;
-}
-.nav-link.active {
-    background: rgba(255, 255, 255, 0) !important;
-    color: #6c757d!important;
 }
