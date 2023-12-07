@@ -1,0 +1,42 @@
+{
+    "Year 1": {
+        "Social Media Communications": "A",
+        "Database Fundamentals": "A",
+        "Operating Systems Fundamentals": "B",
+        "Statistics": "B+",
+        "Software Development 2": "A",
+        "Object Oriented Systems Analysis": "B",
+        "Computer Architecture": "B",
+        "Critical Skills Development": "B+",
+        "Business & Information Systems": "B+",
+        "Discrete Mathematics 1": "A",
+        "Software Development 1": "B+",
+        "Visual Design & User Experience": "A",
+        "GPA": 3.58
+    },
+    "Year 2": {
+        "Database Admin & Analysis": "B+",
+        "Management Science": "A",
+        "Routing & Switching Essentials": "B+",
+        "Project": "A",
+        "Information Security": "B+",
+        "Software Development 4": "A",
+        "Advanced Database Technologies": "A",
+        "Discrete Mathematics 2": "A",
+        "Network Fundamentals": "B+",
+        "Software Quality Assurance And Testing": "A",
+        "Software Development 3": "A",
+        "Client-side Web Development": "A",
+        "GPA": 3.83
+      },
+    "Year 3": {
+        "Server-side Web Development": "B+",
+        "Operating Systems": "B+",
+        "Cloud Service & Distrib Comp": "B",
+        "Big Data Technologies": "B+",
+        "Data Structures & Algorithms": "A",
+        "Data Analysis": "B+",
+        "EXPERIENTAL LEARNING": "PASS",
+        "GPA": 3.50
+    }      
+}

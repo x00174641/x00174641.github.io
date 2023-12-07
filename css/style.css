@@ -88,7 +88,7 @@ a:hover {
 
 /* Work Experience Section */
 .work-experience-background {
-    background-color: #f5f0e9;
+    background-color: #eee7dd;
 }
 .work-experience-main-container {
     margin: 0 auto;
@@ -161,7 +161,7 @@ a:hover {
 }
 /* Portfolio */
 .portfolio-background {
-    background-color: #eee7dd;
+    background-color:  #f5f0e9;
 }
 
 .portfolio-container {
@@ -244,6 +244,9 @@ a:hover {
     .circularButton {
         display: none;
     }
+    .education-container .circularButton {
+        display: block;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -325,4 +328,13 @@ a:hover {
     transform: scale(1.2);
     color: #fca159;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Education */
+.education-container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.education-heading {
+    font-size: 45px;
 }

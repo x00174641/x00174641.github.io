@@ -23,6 +23,9 @@
               <a class="nav-link" href="#aboutme">About me</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#work_experience">Work Experience</a>
             </li>
             <li class="nav-item">
@@ -71,6 +74,32 @@
     </div>
   </section>
 
+  <section id="education">
+    <div class="education-container">
+      <h4 class="text-center">Education</h4>
+      <h1 class="education-heading text-center" id="currentYearResults"></h1>
+      <hr>
+            <div class="content">
+                <table id="gradesTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Module Name</th>
+                            <th>Grade Received</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="button-container">
+                  <button class="btn button-colour rounded-circle circularButton mt-5 m-4" onclick="changeYear(-1)" id="prevYearBtn">
+                      <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="btn button-colour rounded-circle circularButton mt-5 m-4" onclick="changeYear(1)" id="nextYearBtn">
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+              </div>          
+  </section>
+  
   <section class="work-experience-background" id="work_experience">
     <div class="work-experience-main-container">
     <h4 class="text-center">Experience</h4>
