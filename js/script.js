@@ -69,13 +69,13 @@ function changeYear(increment) {
         getGrades(years[index]);
     }
 
-    if (index == years.length-1) {
+    if (index >= years.length-1) {
         document.getElementById('nextYearBtn').style.background = '#ccc'
     } else {
         document.getElementById('nextYearBtn').style.background = '#fba056'
     }
 
-    if (index == 0) {
+    if (index <= 0) {
         document.getElementById('prevYearBtn').style.background = '#ccc'
     } else {
         document.getElementById('prevYearBtn').style.background = '#fba056'
