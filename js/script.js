@@ -81,3 +81,22 @@ function changeYear(increment) {
         document.getElementById('prevYearBtn').style.background = '#fba056'
     }
 }
+
+function sendMessage() {
+    var contactModalElement = document.getElementById('contactModal');
+    var contactModal = bootstrap.Modal.getInstance(contactModalElement);
+    var messageSentModalElement = document.getElementById('messageSentModal');
+    var messageSentModal = new bootstrap.Modal(messageSentModalElement);
+    var form = document.querySelector('#contactModal form');
+
+    if (form.checkValidity() == false) {
+        return;
+    }
+    contactModalElement.addEventListener('hidden.bs.modal', function (e) {
+      messageSentModal.show();
+      contactModalElement.removeEventListener('hidden.bs.modal', arguments.callee);
+    });
+  
+    contactModal.hide();
+  }
+  
