@@ -341,3 +341,12 @@ a:hover {
 .education-background {
     background-color:  #f5f0e9;
 }
+
+/*  Contact Section */
+.contact-background {
+    background-color: #eee7dd;
+}
+
+.contact-container {
+    margin: 0 auto;
+}
