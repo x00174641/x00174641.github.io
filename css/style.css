@@ -361,3 +361,7 @@ a:hover {
 .progress-background {
     background-color: #fba056bb;
 }
+/* Interests */
+.interests-container {
+    margin: 0 auto;
+}
