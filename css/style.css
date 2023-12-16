@@ -251,6 +251,7 @@ a:hover {
     top: 56px;
     width: 100%;
     background: #f5f0e9;
+    height: 4px;
 }
 
 /* Icons */
@@ -349,17 +350,6 @@ a:hover {
 
     .right-container {
         left: 0;
-    }
-}
-
-@media (min-width: 1048px) { 
-    .navbar,.container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .navbar-collapse {
-      flex-grow: 0;
     }
 }
 
