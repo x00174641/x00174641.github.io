@@ -82,21 +82,21 @@ function changeYear(increment) {
     }
 }
 
-function sendMessage() {
+function sendMessage(event) {
+    event.preventDefault();
     var contactModalElement = document.getElementById('contactModal');
     var contactModal = bootstrap.Modal.getInstance(contactModalElement);
-    var messageSentModalElement = document.getElementById('messageSentModal');
-    var messageSentModal = new bootstrap.Modal(messageSentModalElement);
     var form = document.querySelector('#contactModal form');
 
     if (form.checkValidity() == false) {
         return;
     }
-    contactModalElement.addEventListener('hidden.bs.modal', function (e) {
-      messageSentModal.show();
-      contactModalElement.removeEventListener('hidden.bs.modal', arguments.callee);
-    });
-  
+
     contactModal.hide();
+    var messageSentText = document.getElementById('contactSuccess');
+    messageSentText.hidden = false;
+    setTimeout(function() {
+        messageSentText.hidden = true;
+    }, 5000);
   }
   

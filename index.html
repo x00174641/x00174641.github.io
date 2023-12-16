@@ -67,29 +67,17 @@
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-outline-warning" onclick="sendMessage()">Send Message</button>
+                            <button type="submit" class="btn btn-outline-warning" onclick="sendMessage(event)">Send Message</button>
                           </div>
                         </form>
                       </div>
                     </div>
                   </div>
                 </div>
-              <div class="modal fade" id="messageSentModal" tabindex="-1" aria-labelledby="messageSentModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <p class="text-success">Message Sent Successfully!</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
+                </div>
+                <h5 class="text-center text-success mt-4" id="contactSuccess" hidden>Thank you for your email. Your email has been sent to me!</h5>
                 </div>
               </div>
-            </div>
-            </div>
-          </div>
-        </div>
 
   <section class="about-me-background" id="aboutme">
     <div class="about-me-container">
