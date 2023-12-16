@@ -32,45 +32,7 @@ a:hover {
     color: #000 !important;
 }
 
-/* Headline Section */
-.headline-section-background {
-    background-image: radial-gradient(circle at right, #fca159, #f5f0e9, #f5f0e9, #f5f0e9, #f5f0e9);
-}
-
-.headline-container {
-    margin: 0 auto;
-    max-width: 800px;
-    margin-bottom: 300px;
-}
-
-.headline-text {
-    font-size: 80px;
-}
-
-/* About me Section */
-.about-me-background {
-    background-color: #eee7dd;
-}
-
-.about-me-container {
-    margin: 0 auto;
-    max-width: 900px;
-}
-
-.about-me-heading {
-    font-size: 60px;
-}
-
-.card-picture {
-    width: 350px;
-    border-radius: 50%;
-}
-
 /* NavBar */
-.navbar {
-    background-color: #f5f0e9;
-}
-
 .nav-link {
     color: #000 !important;
 }
@@ -86,25 +48,81 @@ a:hover {
     color: #fff;
 }
 
-/* Work Experience Section */
-.work-experience-background {
+/* Backgrounds */
+.headline-section-background {
+    background-image: radial-gradient(circle at right, #fca159, #f5f0e9, #f5f0e9, #f5f0e9, #f5f0e9);
+}
+
+.primary-background {
+    background-color:  #f5f0e9;
+}
+
+.secondary-background {
     background-color: #eee7dd;
 }
+
+.navbar {
+    background-color: #f5f0e9;
+}
+
+.progress-background {
+    background-color: #fba056bb;
+}
+/* Headline Section */
+.headline-container {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 300px;
+}
+
+.headline-text {
+    font-size: 80px;
+}
+
+/* About me Section */
+.about-me-container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.about-me-heading {
+    font-size: 60px;
+}
+
+.card-picture {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* Education */
+.education-container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.education-heading {
+    font-size: 45px;
+}
+
+/* Work Experience Section */
 .work-experience-main-container {
     margin: 0 auto;
     color: #000;
     margin-top: 8%;
 }
+
 .timeline {
     position: relative;
     max-width: 1800px;
     margin: 100px auto;
 }
+
 .work-container {
     padding: 10px 50px;
     position: relative;
     width: 50%;
 }
+
 .work-container img {
     position: absolute;
     width: 40px;
@@ -117,6 +135,7 @@ a:hover {
 .right-container img {
     left: -20px;
 }
+
 .timeline::after{
    content: '';
    position: absolute;
@@ -129,6 +148,7 @@ a:hover {
    z-index: 1;
    animation: timelinemove 2s linear forwards;
 }
+
 @keyframes timelinemove {
     0% {
         height: 0;
@@ -137,21 +157,26 @@ a:hover {
         height: 100%;
     }
 }
+
 .text-box {
     padding: 20px 30px;
     position: relative;
     font-size: 15px;
 }
+
 .left-container {
     left: 0;
 }
+
 .work-experience-duration {
     color: #000;
 }
+
 .left-container .work-experience-duration {
     position: relative;
     left: 80% !important;
 }
+
 .right-container {
     left: 50%;
 }
@@ -159,16 +184,12 @@ a:hover {
 .work-experience-company-title {
     font-size: 36px;
 }
-/* Portfolio */
-.portfolio-background {
-    background-color:  #f5f0e9;
-}
 
+/* Portfolio */
 .portfolio-container {
     margin: 0 auto;
     max-width: 90%;
     margin-top: 5%;
-
 }
 
 .card {
@@ -214,6 +235,46 @@ a:hover {
     background-color: #fba056;
 }
 
+/* Interests */
+.interests-container {
+    margin: 0 auto;
+}
+
+/*  Contact Section */
+.contact-container {
+    margin: 0 auto;
+}
+
+/* Progress Bar */
+.progress {
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    background: #f5f0e9;
+}
+
+/* Icons */
+.fa {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    font-size: 32px;
+}
+
+.fa:hover {
+    transform: scale(1.2);
+    color: #fca159;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Badges */
+.badge-python {
+    background-color: #306998;
+    color: white;
+}
+
+.badge {
+    border-radius: 10px;
+}
+
 /* Mobile Friendly */
 @media (max-width: 1200px) {
     html {
@@ -235,15 +296,19 @@ a:hover {
     .about-me-container img {
         width: 50%;
     }
+
     .active-card {
         transform: scale(1);
     }
+
     .card:not(.active-card) {
         opacity: 1;
     }
+
     .circularButton {
         display: none;
     }
+
     .education-container .circularButton {
         display: block;
     }
@@ -263,20 +328,25 @@ a:hover {
     .left-container img, .right-container img {
         left: 10px;
     }
+
     .work-experience-heading, .work-experience-company-title {
         font-size: 22px;
     }
+
     .timeline {
         margin: 0px auto;
         max-width: 100% !important;
     }
+
     .timeline::after {
         left: 30px;
     }
+
     .text-box {
         font-size: 12px;
         padding: 0px 0px;
     }
+
     .right-container {
         left: 0;
     }
@@ -302,66 +372,12 @@ a:hover {
     .active-card {
         transform: scale(1);
     }
+
     .card:not(.active-card) {
         opacity: 1;
     }
+
     .circularButton {
         display: none;
     }
-}
-
-/* Badges */
-.badge-python {
-    background-color: #306998;
-    color: white;
-}
-.badge {
-    border-radius: 10px;
-}
-
-/* Icons */
-.fa {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    font-size: 32px;
-}
-.fa:hover {
-    transform: scale(1.2);
-    color: #fca159;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Education */
-.education-container {
-    margin: 0 auto;
-    max-width: 800px;
-}
-.education-heading {
-    font-size: 45px;
-}
-.education-background {
-    background-color:  #f5f0e9;
-}
-
-/*  Contact Section */
-.contact-background {
-    background-color: #eee7dd;
-}
-
-.contact-container {
-    margin: 0 auto;
-}
-/* Progress Bar */
-.progress {
-    position: fixed;
-    top: 56px;
-    width: 100%;
-    background: #f5f0e9;
-}
-
-.progress-background {
-    background-color: #fba056bb;
-}
-/* Interests */
-.interests-container {
-    margin: 0 auto;
 }
