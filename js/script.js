@@ -82,6 +82,7 @@ function changeYear(increment) {
     }
 }
 
+// Contact
 function sendMessage(event) {
     event.preventDefault();
     var contactModalElement = document.getElementById('contactModal');
@@ -99,4 +100,11 @@ function sendMessage(event) {
         messageSentText.hidden = true;
     }, 5000);
   }
-  
+
+// Progress Bar
+document.addEventListener("scroll", function() {
+    let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    let curPosition = window.scrollY;
+    let progress = (curPosition / scrollHeight) * 100;
+    document.querySelector(".progress-bar").style.width = `${progress}%`;
+});

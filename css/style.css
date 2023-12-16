@@ -350,3 +350,14 @@ a:hover {
 .contact-container {
     margin: 0 auto;
 }
+/* Progress Bar */
+.progress {
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    background: #f5f0e9;
+}
+
+.progress-background {
+    background-color: #fba056bb;
+}
